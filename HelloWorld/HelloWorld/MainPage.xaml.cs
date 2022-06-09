@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HelloWorld.Pages;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -38,6 +39,11 @@ namespace HelloWorld
         {
             Debug.WriteLine("[+] Exit Button Clicked");
             CoreApplication.Exit();
+        }
+
+        private void Todos_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Todos));
         }
     }
 }

@@ -1,5 +1,8 @@
 # Vscode files
 .vscode
 
+# Visual Studio Files
+*/.vs
+
 # Debug
 *Debug

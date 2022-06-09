@@ -45,10 +45,13 @@ namespace HelloWorld.Pages
                 Debug.WriteLine("Not Done");
             }
             todos.Add(text);
+            Debug.WriteLine("[+] Added todo");
             for (int i = 0; i < todos.Count; i += 1)
             {
                 Debug.WriteLine(todos[i]);
             }
+            title.Text = "";
+            isDone.IsChecked = false;
         }
 
     }

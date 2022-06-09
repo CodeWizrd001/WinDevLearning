@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,6 +27,17 @@ namespace HelloWorld
         public MainPage()
         {
             this.InitializeComponent();
+        }
+
+        private async void hello_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("[+] Hello Button Clicked");
+        }
+
+        private void exit_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("[+] Exit Button Clicked");
+            CoreApplication.Exit();
         }
     }
 }

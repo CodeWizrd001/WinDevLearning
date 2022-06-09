@@ -9,6 +9,12 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Button x:Name="hello" Height="30" Margin="150,400,0,0" VerticalAlignment="Top" Width="180" Click="hello_Click">
+            <x:String>HelloWorld</x:String>
+        </Button>
+        <Button x:Name="exit" Height="30" Click="exit_Click">
+            <x:String>Exit</x:String>
+        </Button>
 
     </Grid>
 </Page>

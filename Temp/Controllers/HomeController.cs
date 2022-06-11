@@ -23,11 +23,6 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult Hello(string name)
-    {
-        return new JsonResult(new { message = $"Hello, {name}!" });
-    }
-
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

@@ -26,7 +26,7 @@ app.MapControllerRoute(
 
 app.MapControllerRoute(
     name: "hello",
-    pattern: "{controller=Home}/{action=Hello}/{name?}");
+    pattern: "{controller=Hello}/{action=Hello}/{name?}");
 
 
 app.Run();

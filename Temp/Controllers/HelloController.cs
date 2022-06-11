@@ -14,8 +14,8 @@ public class HelloController : Controller
     }
 
     // GET: /Hello/name
-    public IActionResult Hello(string name)
+    public string Hello(string name)
     {
-        return new JsonResult(new { message = $"Hello, {name}!" });
+        return $"Hello, {name}!";
     }
 }

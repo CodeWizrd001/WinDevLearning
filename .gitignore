@@ -11,3 +11,7 @@
 
 # Env File
 .env
+
+# Temp files
+*.tmp
+*.temp

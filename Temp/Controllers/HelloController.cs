@@ -16,6 +16,13 @@ public class HelloController : Controller
     // GET: /Hello/name
     public string Hello(string name)
     {
-        return $"Hello, {name}!";
+        return "Hello " + name;
+    }
+
+    // POST: /Hello/post
+    [HttpPost]
+    public string HelloPost(string name)
+    {
+        return "Hello " + name;
     }
 }
